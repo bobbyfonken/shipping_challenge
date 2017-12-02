@@ -18,7 +18,7 @@ INSERT INTO `Person` (`id`, `name`) VALUES
 (1, 'Bobby Fonken'),
 (2, '2ITF2'),
 (3, 'Linux Webservices'),
-(4, 'Shipping challenge');
+(4, 'Shipping Challenge');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

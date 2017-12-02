@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Linux | Shipping challenge</title>
+  <title>Hello...</title>
 
   <meta charset="utf-8"> 
 
@@ -12,13 +12,13 @@
 <body>
     <div class="container">
     <?php 
-	echo "<h1>Shipping challenge</h1>";
+	echo "<h1>Shipping challenge</h1>"; 
 	echo "<p>This is being runned in a Docker container using <q>sudo docker-compose up -d</q></p>";
-	 ?>
+	?>
 
-    <?php
-    // Connecteren met de database: phpmyadmin
-    $conn = mysqli_connect('db', 'user', 'test', "myDb");
+	<?php
+    // Connecteren met de datatbase
+    $conn = mysqli_connect('db', 'bobby', 'r0668236', "myDb");
     $query = 'SELECT * From Person';
     $result = mysqli_query($conn, $query);
     echo '<table class="table table-striped">';
@@ -32,7 +32,6 @@
         echo '</tr>';
     }
     echo '</table>';
-
     $result->close();
     mysqli_close($conn);
     ?>
