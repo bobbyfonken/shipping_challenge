@@ -1,0 +1,240 @@
+body {
+    font-family: verdana, sans-serif;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+}
+
+#container {
+    position: absolute;
+    left: 16%;
+    width: 68%;
+    height: 45%;
+    min-width: 317px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px 2px 20px 13px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    color: black;
+    background-image: url(/Afbeeldingen/filmgrain.gif);
+    padding-bottom: 0%;
+    margin-top: 10px;
+    background-size: cover;
+    text-align: center;
+    z-index: 2;
+}
+
+#container2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/Afbeeldingen/SVG//Error/error404.svg);
+    background-size: contain;
+    padding-bottom: 0%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*padding-right: 20px;*/
+}
+
+.responsive-chairs {
+    position: absolute;
+    width: 100%;
+    background-image: url(/Afbeeldingen/Stoelen/cinemastoelenGood.svg);
+    padding-bottom: 10%;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    bottom: 0px;
+    z-index: 1;
+}
+
+/*mediaqueries: kleine schermen (groot --> klein)*/
+
+
+/*Max-width*/
+
+@media (max-width:890px) {
+    #container {
+        left: 3%;
+        width: 94%;
+    }
+    .responsive-chairs {
+        padding-bottom: 15%;
+    }
+}
+
+@media (min-width: 451px) and (max-width:800px) {
+    #container {
+        left: 4%;
+        width: 92%;
+        top: 8%;
+        height: 90%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .responsive-chairs {
+        background-image: none;
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        margin-top: 5%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #container {
+        left: 2%;
+        width: 96%;
+        top: 8%;
+        height: 90%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: -1px 2px 15px 13px rgba(0, 0, 0, 0.5);
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #container2 {
+        width: 100%;
+        height: 100%;
+        background-image: url(/Afbeeldingen/SVG/Error/error404Klein.svg);
+        background-position: bottom center;
+    }
+    
+    .responsive-chairs {
+        background-image: none;
+    }
+    
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+        font-size: 50%;
+    }
+}
+
+
+/*End max-width*/
+
+
+/*Max-height*/
+
+@media (max-height:490px) {
+    body {
+        margin-top: 0%;
+        margin-bottom: 0;
+    }
+    #container {
+        left: 3%;
+        width: 94%;
+        top: 10%;
+        height: 88%;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: -1px 2px 20px 13px rgba(0, 0, 0, 0.3);
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url(../Afbeeldingen/filmgrain.gif);
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .responsive-chairs {
+        background-image: none;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-height: 350px) {
+    #container {
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: -1px 2px 20px 13px rgba(0, 0, 0, 0.3);
+    }
+    
+    #container2 {
+        background-position: bottom center;
+    }
+}
+
+
+/*End max-height*/
+
+
+/* end mediaqueries: kleine schermen*/
+
+/*Link effect*/
+.wrapper {
+    margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+a:hover {
+    color: rgb(218, 0, 0)/*#d73444*/;
+    background-color: transparent;
+}
+
+a.before:before,
+a.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+a.before:before {
+    top: -0.25em;
+}
+
+a.after:after {
+    bottom: -0.25em;
+}
+
+a.before:before,
+a.after:after {
+    height: 3px;
+    width: 0;
+    background: rgb(218, 0, 0);
+    color: transparent;
+}
+
+a.eigth:before {
+    left: 0;
+}
+
+a.eigth:after {
+    right: 0;
+}
+
+a.before:hover:before,
+a.after:hover:after {
+    width: 100%;
+}
+
+.square:before{
+  left:0;
+  bottom:-0.2em;
+}
+/*end link effects*/

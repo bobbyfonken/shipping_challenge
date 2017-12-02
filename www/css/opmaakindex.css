@@ -1,0 +1,406 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: verdana, sans-serif;
+    margin-top: 3%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+#container {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 54%;
+    min-width: 340px;
+    box-shadow: -1px 2px 20px 13px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    color: black;
+    background-image: url(../Afbeeldingen/filmgrain.gif);
+    padding-bottom: 0%;
+    margin-top: 10px;
+    background-size: cover;
+    text-align: center;
+    /*overflow: hidden;*/
+    z-index: 2;
+}
+
+#container2 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url(../Afbeeldingen/SVG/WebPatroon/Spin/SpinnenwebLinksSpin.svg), url(../Afbeeldingen/SVG/WebPatroon/Web/SpinnenwebRechts.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, top right;
+    /*padding-right: 20px;*/
+}
+#Slideshow {
+    margin: 0;
+    padding: 0;
+    
+}
+.Pages {
+    padding-top: 1%;
+}
+#Navigatie {
+    position: absolute;
+    top:0;
+    left: 5%;
+    z-index: 3;
+}
+.pipe {
+    font-size: 150%;
+}
+h2 {
+    font-size: 190%;
+    margin: 0% 0% 2.5% 0%;
+}
+h3 {
+    margin: 0;
+}
+.Ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#container2 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+#Tabledata {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	margin: 0 auto;
+	
+}
+
+#Data {
+	
+}
+
+table {
+	margin: 0 auto;
+}
+
+#skillstaken {
+    margin: 0;
+}
+
+img.logo-WB {
+    vertical-align: text-bottom;
+}
+
+.tekst-WB {
+    margin-left: 4px;
+}
+.OverMij {
+    width: 50%;
+    float: left;
+}
+.hobbies {
+    margin: 0px auto;
+}
+.Fotos {
+    margin:0;
+}
+.ClearFix {
+    display: block;
+    content: "";
+    clear: both;
+    margin-top: 15%;
+}
+.ContactIcons {
+    margin:0%;
+}
+.responsive-chairs {
+    position: absolute;
+    width: 100%;
+    background-image: url(../Afbeeldingen/Stoelen/cinemastoelenGood.svg);
+    padding-bottom: 10%;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.black {
+    font-family: 'Revalia', cursive;
+}
+
+p, ul {
+    font-family: 'Lora', serif;
+    font-size: 110%;
+}
+#size {
+    font-size: 120%;
+    margin: 0;
+    margin-top: 1%;
+}
+.overheadtheme {
+    font-size: 40px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-bottom: 3px;
+}
+
+
+/*Link effect*/
+
+.wrapper {
+    margin: 2em 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    color: forestgreen/* #303F42 */
+    ;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+a:hover {
+    color: rgb(218, 0, 0)/*#d73444*/
+    ;
+    background-color: transparent;
+}
+
+a.before:before,
+a.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+a.before:before {
+    top: -0.25em;
+}
+
+a.after:after {
+    bottom: -0.25em;
+}
+
+a.before:before,
+a.after:after {
+    height: 3px;
+    width: 0;
+    background: rgb(218, 0, 0);
+    color: transparent;
+}
+
+a.eigth:before {
+    left: 0;
+}
+
+a.eigth:after {
+    right: 0;
+}
+
+a.before:hover:before,
+a.after:hover:after {
+    width: 100%;
+}
+
+/*end link effects*/
+
+.Taak2 {
+    margin-right: 5%;
+}
+
+.gs960 {
+    margin-left: 5%;
+}
+.Projects, 
+.Projects:visited, 
+.Projects:hover, 
+.Projects:active {
+    font-size: 40px;
+}
+.KeuzeEnGroeps {
+    width: 50%;
+    float: left;
+}
+
+/*mediaqueries: kleine schermen (groot --> klein)*/
+
+
+/*Width*/
+
+@media (max-width:890px) {
+    #container {
+        left: 3%;
+        width: 94%;
+    }
+    .responsive-chairs {
+        padding-bottom: 15%;
+    }
+}
+@media (min-width: 451px) and (max-width:679px) {
+    body {
+        background-image: url(../Afbeeldingen/TabletBackground2.jpg);
+        background-size: cover;
+        padding: 0%;
+        background-repeat: repeat-y;
+
+    }
+    #container {
+        left: 4%;
+        width: 92%;
+        top: 20%;
+        height: 60%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #container2 {
+        background-image: none;
+    }
+    .KeuzeEnGroeps {
+        width: 100%;
+        float:none;
+    }
+    .responsive-chairs {
+        background-image: none;
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url(../Afbeeldingen/TabletBackground2.jpg);
+        background-size: cover;
+        padding: 0%;
+        background-repeat: repeat-y;
+    }
+    #container {
+        left: 2%;
+        width: 96%;
+        top: 7%;
+        height: 92%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: -1px 2px 15px 13px rgba(0, 0, 0, 0.5);
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #container2 {
+        width: 100%;
+        height: 100%;
+        background-image: none;
+    }
+    nav#Navigatie {
+        left: 2%;
+    }
+    
+    a.Navbar, 
+    a.Navbar:visited, 
+    a.Navbar:hover, 
+    a.Navbar:active {
+        font-size: 132%;
+    }
+    .Pages {
+        padding-top: 4%;
+    }
+    .KeuzeEnGroeps {
+        width: 100%;
+        float:none;
+    }
+    #kijker {
+        font-size: 87%;
+    }
+    .responsive-chairs {
+        background-image: none;
+    }
+    .sprite {
+        margin-top: 20%;
+    }
+}
+@media (max-width: 330px) {
+    a.Navbar, 
+    a.Navbar:visited, 
+    a.Navbar:hover, 
+    a.Navbar:active {
+        font-size: 125%;
+    }
+}
+
+/*End Width*/
+
+
+/*Height*/
+
+@media (max-height:490px) {
+    body {
+        margin-top: 0%;
+        margin-bottom: 0;
+        background-image: url(../Afbeeldingen/TabletBackground2.jpg);
+        background-size: cover;
+        padding: 0%;
+        background-repeat: repeat-y;
+    }
+    #container {
+        left: 3%;
+        width: 94%;
+        top: 10%;
+        height: 86%;
+        box-shadow: -1px 2px 20px 13px rgba(0, 0, 0, 0.3);
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url(../Afbeeldingen/filmgrain.gif);
+        margin-top: 0;
+        padding-top: 0;
+    }
+    nav#Navigatie {
+        left: 2%;
+    }
+    
+    a.Navbar, 
+    a.Navbar:visited, 
+    a.Navbar:hover, 
+    a.Navbar:active {
+        font-size: 132%;
+    }
+    .responsive-chairs {
+        background-image: none;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-height: 350px) {
+    #container {
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: -1px 2px 20px 13px rgba(0, 0, 0, 0.3);
+    }
+}
+@media (max-height: 290px) {
+    #container {
+        top: 20%;
+        height: 78%;
+    }
+}
+
+
+/*End Height*/
+
+
+/* end mediaqueries: kleine schermen*/
