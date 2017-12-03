@@ -119,7 +119,7 @@
               <h2 hidden>Projecten</h2>
 	      <h2 class="black">Hieronder ziet u data afkomstig van <a href="http://192.168.112.5:8000"><q>phpmyadmin</q></a></h2>
 				<div id="Tabledata">
-				<table id="Data">
+				<table id="Data" cellspacing="20">
 				<thead>
 				<tr>
 					<th> </th>
