@@ -117,7 +117,8 @@
             </article>
             <article class="Pages">
               <h2 hidden>Projecten</h2>
-				<div id="Tabledata" cellspacing="20">
+	      <h2 class="black">Hieronder ziet u data afkomstig van <a href="http://192.168.112.5:8000"><q>phpmyadmin</q></a></h2>
+				<div id="Tabledata">
 				<table id="Data">
 				<thead>
 				<tr>
