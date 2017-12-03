@@ -31,9 +31,9 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-image: url(../Afbeeldingen/SVG/WebPatroon/Spin/SpinnenwebLinksSpin.svg), url(../Afbeeldingen/SVG/WebPatroon/Web/SpinnenwebRechts.svg);
+    background-image: url(../Afbeeldingen/SVG/WebPatroon/Spin/SpinnenwebLinksSpin.svg), url(../Afbeeldingen/docker2-1.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom left, top right;
+    background-position: bottom left, right;
     /*padding-right: 20px;*/
 }
 #Slideshow {
