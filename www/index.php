@@ -101,7 +101,7 @@
             </p>
 			<p>
                 Ik heb gebruik gemaakt van github om de nodige mappenstructuur remote te kunnen downloaden op elk platform <a href="https://github.com/bobbyfonken/shipping_challenge">(Repository)</a>.
-				Na het installeren van docker en docker-compose, kan ik met één lijn code de containers activeren: <q>sudo docker-compose up -d</q>.
+				Na het installeren van docker en docker-compose, kan ik met één lijn code de containers activeren: <q>sudo bash composer.py/q>.
             </p>
             <p>
 				Op de volgende slide ziet men een beetje voorbeeld data afkomstig uit phpmyadmin.
