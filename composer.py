@@ -1,7 +1,10 @@
 #!/bin/bash
 
-echo "Docker Compose UI opstarten"
+echo "| Starting Docker |"
 echo "--------------------------"
+echo "Find the UI on 192.168.112.5:5000"
+echo "Find the site on 192.168.112.5:8001"
+echo "Find phpmyadmin on 192.168.112.5:8000" 
 
 #oude docker map en container verwijderen
 docker rm docker-compose-ui
